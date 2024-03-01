@@ -13,7 +13,9 @@
     "lint:es": "eslint .",
     "format:es": "eslint . --fix",
     "format:others": "prettier --write \"**/*.{md,mdx,xml,html,json,yaml,graphql}\"",
-    "format:all": "yarn format:others"
+    "format:all": "yarn format:others",
+    "commitlint": "commitlint --edit",
+    "prepare": "husky"
   },
   "keywords": [
     "rrnl",

@@ -123,8 +123,13 @@ dist
 .vscode-test
 
 # yarn v2
+.yarn/sdks
 .yarn/cache
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# ignore ide conf
+.vscode
+.ide

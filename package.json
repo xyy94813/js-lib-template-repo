@@ -17,13 +17,7 @@
     "commitlint": "commitlint --edit",
     "prepare": "husky"
   },
-  "keywords": [
-    "rrnl",
-    "react-relay",
-    "react-relay-network-layer",
-    "react",
-    "request limiter"
-  ],
+  "keywords": [],
   "author": "Yiyuan Xing <xyy94813@sina.com>",
   "license": "MIT",
   "repository": {

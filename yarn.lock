@@ -2811,12 +2811,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^8.0.3":
-  version: 8.0.3
-  resolution: "husky@npm:8.0.3"
+"husky@npm:^9.0.11":
+  version: 9.0.11
+  resolution: "husky@npm:9.0.11"
   bin:
-    husky: lib/bin.js
-  checksum: 6722591771c657b91a1abb082e07f6547eca79144d678e586828ae806499d90dce2a6aee08b66183fd8b085f19d20e0990a2ad396961746b4c8bd5bdb619d668
+    husky: bin.mjs
+  checksum: 2c787dcf74a837fc9a4fea7da907509d4bd9a289f4ea10ecc9d86279e4d4542b0f5f6443a619bccae19e265f2677172cc2b86aae5c932a35a330cc227d914605
   languageName: node
   linkType: hard
 
@@ -3199,6 +3199,31 @@ __metadata:
   checksum: 7f361219fe6c7a5e440d5f1dba4ab763a5538d2df8708cdc22561cf25ea3e44b837687931fca7cdd8cdd9f567300e90be989dd1321650045012d8f9ed6aab07f
   languageName: node
   linkType: hard
+
+"js-lib-template-repo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "js-lib-template-repo@workspace:."
+  dependencies:
+    "@commitlint/cli": "npm:^18.4.3"
+    "@commitlint/config-conventional": "npm:^18.4.3"
+    "@rollup/plugin-terser": "npm:^0.4.4"
+    "@rollup/plugin-typescript": "npm:^11.1.5"
+    "@typescript-eslint/eslint-plugin": "npm:^6.4.0"
+    eslint: "npm:^8.0.1"
+    eslint-config-standard: "npm:^17.1.0"
+    eslint-config-standard-with-typescript: "npm:^43.0.0"
+    eslint-plugin-import: "npm:^2.25.2"
+    eslint-plugin-n: "npm:^15.0.0 || ^16.0.0 "
+    eslint-plugin-promise: "npm:^6.0.0"
+    husky: "npm:^9.0.11"
+    lint-staged: "npm:^15.2.0"
+    prettier: "npm:^3.1.1"
+    rollup: "npm:^4.9.1"
+    rollup-plugin-filesize: "npm:^10.0.0"
+    tslib: "npm:^2.6.2"
+    typescript: "npm:^5.3.3"
+  languageName: unknown
+  linkType: soft
 
 "js-tokens@npm:^4.0.0":
   version: 4.0.0
@@ -4653,31 +4678,6 @@ __metadata:
   checksum: fdc76d496583bd916da773522a4949326373c2df55520fc40a56e61f10b16e5214dbeec1947ca13e07f80c0a1a2975ba71ea9bc48d298cda3ee17deaff9aacf6
   languageName: node
   linkType: hard
-
-"rrnl-request-limiter-middleware@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "rrnl-request-limiter-middleware@workspace:."
-  dependencies:
-    "@commitlint/cli": "npm:^18.4.3"
-    "@commitlint/config-conventional": "npm:^18.4.3"
-    "@rollup/plugin-terser": "npm:^0.4.4"
-    "@rollup/plugin-typescript": "npm:^11.1.5"
-    "@typescript-eslint/eslint-plugin": "npm:^6.4.0"
-    eslint: "npm:^8.0.1"
-    eslint-config-standard: "npm:^17.1.0"
-    eslint-config-standard-with-typescript: "npm:^43.0.0"
-    eslint-plugin-import: "npm:^2.25.2"
-    eslint-plugin-n: "npm:^15.0.0 || ^16.0.0 "
-    eslint-plugin-promise: "npm:^6.0.0"
-    husky: "npm:^8.0.3"
-    lint-staged: "npm:^15.2.0"
-    prettier: "npm:^3.1.1"
-    rollup: "npm:^4.9.1"
-    rollup-plugin-filesize: "npm:^10.0.0"
-    tslib: "npm:^2.6.2"
-    typescript: "npm:^5.3.3"
-  languageName: unknown
-  linkType: soft
 
 "run-parallel@npm:^1.1.9":
   version: 1.2.0

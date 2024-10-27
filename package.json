@@ -29,7 +29,7 @@
     "url": "https://github.com/xyy94813/js-lib-template-repo/issues"
   },
   "homepage": "https://github.com/xyy94813/js-lib-template-repo#readme",
-  "packageManager": "yarn@4.0.2",
+  "packageManager": "yarn@4.5.1",
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",

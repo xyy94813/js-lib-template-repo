@@ -1,8 +1,8 @@
-import path from 'path'
-import { fileURLToPath } from 'url'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import terser from '@rollup/plugin-terser'
-import filesize from 'rollup-plugin-filesize'
 import typescript from '@rollup/plugin-typescript'
+import filesize from 'rollup-plugin-filesize'
 
 import pkg from './package.json'
 // eslint need babel-parser to resolve "with" syntax
@@ -23,24 +23,26 @@ const testFileMatchers = [
 
 const deps = [...Object.keys(pkg.peerDependencies || {}), ...Object.keys(pkg.dependencies || {})]
 
-const external = (id) => deps.includes(id) || /@babel\/runtime\//.test(id)
+const external = id => deps.includes(id) || /@babel\/runtime\//.test(id)
 
-const generateDevOutputs = () => [
-  {
-    file: path.join(outputDir, 'rrnl-request-limiter-middleware.js'),
-    format: 'cjs',
-  },
-  {
-    file: path.join(outputDir, 'rrnl-request-limiter-middleware.mjs'),
-    format: 'es',
-  },
-  {
-    file: path.join(outputDir, 'rrnl-request-limiter-middleware.cjs'),
-    format: 'cjs',
-  },
-]
+function generateDevOutputs() {
+  return [
+    {
+      file: path.join(outputDir, 'rrnl-request-limiter-middleware.js'),
+      format: 'cjs',
+    },
+    {
+      file: path.join(outputDir, 'rrnl-request-limiter-middleware.mjs'),
+      format: 'es',
+    },
+    {
+      file: path.join(outputDir, 'rrnl-request-limiter-middleware.cjs'),
+      format: 'cjs',
+    },
+  ]
+}
 
-const generateProdOutputs = () => {
+function generateProdOutputs() {
   const plugins = [terser()]
   return [
     {

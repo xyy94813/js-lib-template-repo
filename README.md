@@ -14,11 +14,7 @@ A template repository for quickly develop js lib/module
 
 ## How to use?
 
-follow the [Contributing Guild](./Contributing.md)
-
-1. clone this repo
-2. change the package name
-3. write code in src
+Follow the [Contributing Guild](./Contributing.md)，and [see helper](./docs/how-to-use.md)
 
 ## Stack
 

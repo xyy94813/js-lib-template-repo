@@ -28,7 +28,10 @@
     "format:others": "prettier --write \"**/*.{md,mdx,xml,html,json,yaml,graphql}\"",
     "format:all": "yarn format:others",
     "commitlint": "commitlint --edit",
-    "prepare": "husky"
+    "prepare": "husky",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.8.0",
@@ -46,6 +49,8 @@
     "rollup-plugin-filesize": "^10.0.0",
     "tslib": "^2.6.2",
     "typescript": "^5.3.3",
-    "vitest": "^2.1.3"
+    "vitepress": "^1.4.1",
+    "vitest": "^2.1.3",
+    "vue": "^3.5.12"
   }
 }
